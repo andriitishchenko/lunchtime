@@ -10,6 +10,25 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1693221370909429',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+
+    // ADD ADDITIONAL FACEBOOK CODE HERE
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
     <section class="page-header">
       <h1 class="project-name">Lunchtime</h1>
       <h2 class="project-tagline">lunchtime</h2>
